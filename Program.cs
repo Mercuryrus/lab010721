@@ -22,9 +22,10 @@ namespace lab010721
             Act.ShowPersons(Act._persons);
             Console.ReadLine();
             Console.Clear();
-            Console.WriteLine("Выберите работу (0-3):");
+            Console.WriteLine($"Всего: {count}");
+            Console.Write("Выберите работу (0-3):");
             int work = int.Parse(Console.ReadLine());
-            Console.WriteLine("Выберите город (0-3):");
+            Console.Write("Выберите город (0-3):");
             int city = int.Parse(Console.ReadLine());
             Act.ShowPersons(Act._persons, (Work)work, (City)city);
         }

@@ -19,8 +19,9 @@ namespace lab010721
                 Person currentPerson = Act.NewPerson(i);
                 Act._persons.Add(currentPerson);
             }
-            Console.Clear();
             Act.ShowPersons(Act._persons);
+            Console.ReadLine();
+            Console.Clear();
             Console.WriteLine("Выберите работу (0-3):");
             int work = int.Parse(Console.ReadLine());
             Console.WriteLine("Выберите город (0-3):");

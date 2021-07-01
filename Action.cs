@@ -19,7 +19,7 @@ namespace lab010721
             int work = int.Parse(Console.ReadLine());
             Console.WriteLine("Введите город (int): ");
             int city = int.Parse(Console.ReadLine());*/
-            string name = "Подопытный_" + i;
+            string name = "Подопытный_" + (1+i);
             int age = (new Random().Next(0, 100));
             int work = (new Random()).Next((int)Work.Unemployed, (int)Work.Seller + 1);
             int city = (new Random()).Next((int)City.SPb, (int)City.TUL + 1);

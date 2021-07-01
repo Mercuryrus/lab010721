@@ -16,7 +16,7 @@ namespace lab010721
 
             for (int i = 0; i < count; i++)
             {
-                Person currentPerson = Act.NewPerson();
+                Person currentPerson = Act.NewPerson(i);
                 Act._persons.Add(currentPerson);
             }
             Console.Clear();
